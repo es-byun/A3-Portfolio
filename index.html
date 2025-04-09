@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ellis Byun | Portfolio</title>
-    <!-- body text -->
+    <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300..900&family=Monsieur+La+Doulaise&display=swap" rel="stylesheet">
-<style>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ballet:opsz@16..72&family=Darker+Grotesque:wght@300..900&family=Special+Elite&display=swap" rel="stylesheet">
+    <style>
       * {
         margin: 0;
         padding: 0;
@@ -33,9 +33,9 @@
         font-size: 5.8rem;
         padding: 19rem;
         text-align: center;
-         font-family: "Monsieur La Doulaise", cursive;
-  font-weight: 00;
-  font-style: normal;
+        font-family: "Monsieur La Doulaise", cursive;
+        font-weight: 00;
+        font-style: normal;
       }
 
       nav a {
@@ -50,13 +50,24 @@
 
       section {
         padding: 4rem 2rem;
-        max-width: 900px;
+        max-width: 1000px;
         margin: auto;
       }
 
       h2 {
+        font-size: 3.4rem;
         margin-bottom: 1rem;
         color: white;
+        font-family: "Special Elite", system-ui;
+        font-weight: 400;
+        font-style: normal;
+      }
+
+      img {
+        max-width: 100%;
+        height: auto;
+        margin-top: 0px;
+        display: block;
       }
 
       .projects {
@@ -86,49 +97,49 @@
         font-family: "Darker Grotesque", sans-serif;
         font-size: 1.2rem;
       }
-      
+
       .contact-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 2rem;
-  margin: 2rem 0;
-  color: white;
-}
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 2rem;
+        margin: 2rem 0;
+        color: white;
+      }
 
-.contact-item p {
-  margin: 0.4rem 0;
-  font-size: 1.3rem;
-}
+      .contact-item p {
+        margin: 0.4rem 0;
+        font-size: 1.3rem;
+      }
 
-.contact-item a {
-  color: white;
-  text-decoration: none;
-}
+      .contact-item a {
+        color: white;
+        text-decoration: none;
+      }
 
-.contact-item a:hover {
-  text-decoration: underline;
-}
+      .contact-item a:hover {
+        text-decoration: underline;
+      }
 
 
-.email-button {
-  background-color: white;
-  color: black;
-  padding: 7px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  border-radius: 5px;
-  font-family: "Darker Grotesque", sans-serif;
-  font-size: 1.2rem;
-  font-weight: normal;
-  margin-top: 0rem;
-  transition: background 0.2s ease, color 0.2s ease;
-}
+      .email-button {
+        background-color: white;
+        color: black;
+        padding: 7px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        border-radius: 5px;
+        font-family: "Darker Grotesque", sans-serif;
+        font-size: 1.2rem;
+        font-weight: normal;
+        margin-top: 0rem;
+        transition: background 0.2s ease, color 0.2s ease;
+      }
 
-.email-button:hover {
-  background-color: #e0e0e0;
-  color: black;
-}
+      .email-button:hover {
+        background-color: #e0e0e0;
+        color: black;
+      }
 
       footer {
         text-align: center;
@@ -165,6 +176,7 @@
       <p>Hi! My name is Ellis Byun, i'm a second-year global business and digital arts major at the university of waterloo. with a focus on graphic and UI design, i'm a creative who is passionate about producing work that reflects personality and vision.
         <br>i aim to inspire and be constantly inspired.
       </p>
+      <img src="photoanddrawing.PNG" alt="photo of me with decorations">
     </section>
 
     <section id="projects">
@@ -184,31 +196,31 @@
 
     <section id="contact" class="contact">
       <h2>Contact Me</h2>
-      
+
       <div class="contact-grid">
-  <div class="contact-item">
-    <div>
-      <p><a href="mailto:esbyun@uwaterloo.ca"> &#128231 esbyun@uwaterloo.ca</a> </p>
-    </div>
-  </div>
+        <div class="contact-item">
+          <div>
+            <p><a href="mailto:esbyun@uwaterloo.ca"> &#128231 esbyun@uwaterloo.ca</a> </p>
+          </div>
+        </div>
 
-  <div class="contact-item">
-    <p> &#128222 (647) 549-1020 </p>
-  </div>
+        <div class="contact-item">
+          <p> &#128222 (647) 549-1020 </p>
+        </div>
 
-  <div class="contact-item">
-    <p>
-      <a href="https://www.linkedin.com/in/ellis-byun/" target="_blank">
-        	&#128279 linkedin.com/in/ellis-byun/
-      </a>
-    </p>
-  </div>
-</div>
+        <div class="contact-item">
+          <p>
+            <a href="https://www.linkedin.com/in/ellis-byun/" target="_blank">
+              &#128279 linkedin.com/in/ellis-byun/
+            </a>
+          </p>
+        </div>
+      </div>
 
 
       <form>
-        <input type="text" placeholder="Your Name" required />
-        <input type="email" placeholder="Your Email" required />
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
         <textarea rows="5" placeholder="Your Message" required></textarea>
         <a class="email-button" href="mailto:esbyun@uwaterloo.ca">Send Message</a>
       </form>

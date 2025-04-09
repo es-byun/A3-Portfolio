@@ -23,7 +23,7 @@
         font-optical-sizing: auto;
         font-weight: <weight>;
         font-style: normal;
-        font-size: 1.2rem;
+        font-size: 1.5rem;
 
       }
 
@@ -44,7 +44,7 @@
         text-align: right;
         margin: 2.6rem;
         font-family: "Darker Grotesque", sans-serif;
-        font-size: 1.4rem;
+        font-size: 1.5rem;
         font-weight: normal;
       }
 
@@ -56,7 +56,7 @@
 
       h2 {
         font-size: 3.4rem;
-        margin-bottom: 1rem;
+        margin-bottom: 2.5rem;
         color: white;
         font-family: "Special Elite", system-ui;
         font-weight: 400;
@@ -66,14 +66,16 @@
       img {
         max-width: 100%;
         height: auto;
-        margin-top: 0px;
+        margin-top: -4.5rem;
+        margin-bottom: 0rem;
         display: block;
       }
+
 
       .projects {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-        gap: 2rem;
+        gap: 4rem;
       }
 
       .project-card {
@@ -81,6 +83,48 @@
         padding: 1rem;
         border: 1px solid #ddd;
         border-radius: 8px;
+        color: black;
+        font-size: 1.3rem;
+        line-height: 1.2;
+        transition: box-shadow 0.5s ease;
+      }
+
+      .project-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 0.5rem;
+        margin-bottom: 0.5rem;
+      }
+
+      .project-header h3 {
+        font-size: 1.5rem;
+        font-weight: 700;
+        margin: 0;
+      }
+
+      .project-date {
+        font-size: 1.3rem;
+        color: #555;
+      }
+
+.project-card p {
+  padding: 0 0.5rem 0.5rem;
+  margin: 0;
+      }
+
+
+      .project-card img {
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+        margin-top: 0.5rem;
+        margin-bottom: 1rem;
+      }
+
+      .project-card:hover {
+        border: 3px solid black;
+        transition: border 0.1s ease;
       }
 
       .contact form {
@@ -95,7 +139,7 @@
         border: 1px solid #ccc;
         border-radius: 5px;
         font-family: "Darker Grotesque", sans-serif;
-        font-size: 1.2rem;
+        font-size: 1.3rem;
       }
 
       .contact-grid {
@@ -108,7 +152,7 @@
 
       .contact-item p {
         margin: 0.4rem 0;
-        font-size: 1.3rem;
+        font-size: 1.4rem;
       }
 
       .contact-item a {
@@ -172,19 +216,23 @@
     </header>
 
     <section id="about">
-      <h2>About Me</h2>
-      <p>Hi! My name is Ellis Byun, i'm a second-year global business and digital arts major at the university of waterloo. with a focus on graphic and UI design, i'm a creative who is passionate about producing work that reflects personality and vision.
+      <h2>about me</h2>
+      <p>My name is Ellis Byun, I'm a second-year global business and digital arts major at the university of waterloo. With a focus on graphic and UI design, i'm a creative who is passionate about producing work that reflects personality and vision.
         <br>i aim to inspire and be constantly inspired.
       </p>
-      <img src="photoanddrawing.PNG" alt="photo of me with decorations">
+      <img src="photoanddrawing.png" alt="photo of me with decorations">
     </section>
 
     <section id="projects">
-      <h2>Projects</h2>
+      <h2>projects</h2>
       <div class="projects">
         <div class="project-card">
-          <h3>Project One</h3>
-          <p>A web app that helps users track habits and improve productivity. Built with React and Firebase.</p>
+          <img src="Cover.png" alt="Bliss Mag Cover">
+          <div class="project-header">
+            <h3>Bliss Mag</h3>
+            <span class="project-date">Jan 2023</span>
+          </div>
+          <p>This project showcases a visually engaging magazine that blends my passion for fashion with a deeply personal touch. Drawing inspiration from trends at the time, timeless style, and my own aesthetic, I crafted a publication that reflects my creative vision while connecting with the reader. The magazine offers a curated experience that highlights both my design style and my unique perspective on the world of aesthetics.</p>
         </div>
         <div class="project-card">
           <h3>Project Two</h3>
@@ -195,7 +243,7 @@
     </section>
 
     <section id="contact" class="contact">
-      <h2>Contact Me</h2>
+      <h2>contact Me</h2>
 
       <div class="contact-grid">
         <div class="contact-item">
